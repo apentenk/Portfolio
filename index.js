@@ -71,10 +71,6 @@ app.get("/api/experience", async (request, response) => {
 });
 
 
-//set up server listening
-app.listen(port, () => {
-  console.log(`Listening on http://localhost:${port}`);
-});
 
 
 //MongoDB functions
