@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+#hero{
+  background-image: url("../space.jpg");
+}
+
+.skill-image{
+  width: 64px;
+  height: 64px;
+}
+
+img {
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.education-img{
+  width: 256px;
+}
+
+.experience-img{
+  width: 384px;
+}
+
+.project-img{
+  min-height: 50%;
+  max-height: 50%;
+}
+
+.project-img>img{
+  height: 100%;
+}
