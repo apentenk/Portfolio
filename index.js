@@ -71,6 +71,10 @@ app.get("/api/experience", async (request, response) => {
 });
 
 
+//set up server listening
+app.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}`);
+});
 
 
 //MongoDB functions
@@ -78,11 +82,4 @@ async function connection() {
   await client.connect();
   db = client.db("testdb"); //select testdb database
   return db;
-}
-/* Async function to retrieve all links documents from menuLinks collection. */
-async function getLinks() {
-  db = await connection(); //await result of connection() and store the returned db
-  var results = db.collection("menuLinks").find({}); //{} as the query means no filter, so select all
-  res = await results.toArray();
-  return res;
 }
