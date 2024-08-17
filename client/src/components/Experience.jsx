@@ -25,7 +25,7 @@ export default function Experiences() {
                 <div className="flex flex-1 items-center justify-center w-full">
                     {
                         experiences.map((experience) => (
-                            <div className="card card-side  p-6 bg-base-100 shadow-xl w-full bg-slate-950 bg-opacity-30 items-center">
+                            <div className="card card-side  p-6 bg-base-100 shadow-xl w-full bg-slate-950 bg-opacity-30 items-center sm:flex-col-reverse lg:flex-row">
                                 <div className="card-body gap-y-4">
                                     <h2 className="card-title text-2xl font-bold">{experience.position}</h2>
                                     <h2 className="card-title text-xl text-secondary font-bold">{experience.company}</h2>
@@ -39,7 +39,7 @@ export default function Experiences() {
                                         ))}
                                     </ul>
                                 </div>
-                                <figure className="experience-img bg-slate-50 bg-opacity-10 rounded-3xl p-6">
+                                <figure className="experience-img bg-slate-50 bg-opacity-10 rounded-3xl p-6 sm:w-3/6">
                                     <img src={"experience-img/" + experience._id + ".png"} />
                                 </figure>
                             </div>

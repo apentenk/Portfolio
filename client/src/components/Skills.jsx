@@ -26,14 +26,14 @@ export default function Skills() {
         <section id="skills" className="w-full min-h-screen flex items-center justify-center bg-slate-950 bg-opacity-20">
             <div className="flex items-center min-h-screen pt-24 pb-12 justify-between flex-col  w-4/6">
                 <h2 className="text-4xl font-bold">Skills</h2>
-                <div className="flex w-full sm:flex-col md:flex-row bg-slate-950 bg-opacity-20 p-8 rounded-3xl">
+                <div className="flex w-full sm:flex-col lg:flex-row bg-slate-950 bg-opacity-20 p-8 rounded-3xl">
                     <div className="flex flex-col flex-1 gap-y-4">
                         <h3 className="text-2xl font-bold text-center">Language Proficiency</h3>
                         <div className="flex flex-col gap-y-10">
                             {
                                 languages.map((language) => (
-                                    <div className="flex justify-between item-end">
-                                        <div className="flex items-center gap-x-6">
+                                    <div className="flex justify-between flex-col items-center lg:flex-row lg:item-end">
+                                        <div className="flex items-center gap-x-6 flex-col lg:flex-row">
                                             <div className="skill-image">
                                                 <img src={"skill-icons/" + language._id + ".png"}/>
                                             </div>
@@ -45,10 +45,10 @@ export default function Skills() {
                             }
                         </div>
                     </div>
-                    <div className="divider md:divider-horizontal"></div>
+                    <div className="divider lg:divider-horizontal"></div>
                     <div className="flex flex-col flex-1">
                         <h3 className="text-2xl font-bold text-center">Other Skills</h3>
-                        <div className="flex-1 grid grid-cols-4 md:grid-cols-4 items-center">
+                        <div className="flex-1 grid sm:grid-cols-3 md:grid-cols-3 items-center">
                             {
                                 skills.map((skill) => (
                                     <div className="flex flex-col self-center flex-1 items-center ">

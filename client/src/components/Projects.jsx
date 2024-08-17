@@ -18,7 +18,7 @@ export default function Projects() {
         <section id="projects" className="w-full min-h-screen flex items-center justify-center">
             <div className="flex items-center min-h-screen py-24 justify-between flex-col w-5/6">
                 <h2 className="text-4xl font-bold">Projects</h2>
-                <div className="flex w-full gap-x-4 bg-slate-950 bg-opacity-40 p-12 rounded-3xl">
+                <div className="flex w-full gap-x-4 bg-slate-950 bg-opacity-40 p-12 rounded-3xl items-center sm:flex-col lg:flex-row">
                     {
                         projects.map((project) => (
                             <>

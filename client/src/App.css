@@ -4,6 +4,10 @@
 
 @import "tailwindcss/utilities";
 
+html{
+  scroll-behavior: smooth;
+}
+
 #hero{
   background-image: url("../space.jpg");
 }

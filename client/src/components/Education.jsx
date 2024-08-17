@@ -21,14 +21,14 @@ export default function Educations() {
     return (
         <section id="education" className="w-full min-h-screen flex items-center justify-center">
             <div className="flex items-center min-h-screen py-24 justify-between flex-col gap-y-12  w-4/6">
-                <h2 className="text-4xl font-bold">Education</h2>
+                <h2 className="text-4xl font-bold ">Education</h2>
                 {
                     educations.map((education) => (
-                        <div className="card card-side p-6 bg-base-100 shadow-xl w-full bg-slate-950 bg-opacity-40">
+                        <div className="card card-side p-6 bg-base-100 shadow-xl w-full bg-slate-950 bg-opacity-40 sm:flex-col-reverse lg:flex-row items-center">
                             <figure className="education-img bg-slate-50 bg-opacity-10 rounded-3xl p-6">
                                 <img src={"education-img/" + education._id + ".png"} />
                             </figure>
-                            <div className="card-body gap-y-6">
+                            <div className="card-body gap-y-6 items-center sm:text-center">
                                 <h2 className="card-title text-2xl font-bold">{education.cert}</h2>
                                 <div className="flex text-secondary justify-between text-xl font-bold">
                                     <h3>{education.name}</h3>
