@@ -7,13 +7,13 @@ export default function Skills() {
     useEffect(() => {
 
         const getLanguages = async () => {
-            let response = await fetch(`http://localhost:10000/api/languages/`);
+            let response = await fetch(`/api/languages/`);
             let data = await response.json();
             setLanguage(data);
         }
 
         const getSkills = async () => {
-            let response = await fetch(`http://localhost:10000/api/skills/`);
+            let response = await fetch(`/api/skills/`);
             let data = await response.json();
             setSkills(data);
         }
