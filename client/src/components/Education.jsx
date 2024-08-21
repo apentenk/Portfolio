@@ -10,7 +10,7 @@ export default function Educations() {
     useEffect(() => {
 
         const getEducation = async () => {
-            let response = await fetch(`http://localhost:8888/api/education/`);
+            let response = await fetch(`http://localhost:10000/api/education/`);
             let data = await response.json();
             setEducation(data);
         }

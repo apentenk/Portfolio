@@ -6,7 +6,7 @@ export default function Projects() {
     useEffect(() => {
 
         const getProject = async () => {
-            let response = await fetch(`http://localhost:8888/api/projects/`);
+            let response = await fetch(`http://localhost:10000/api/projects/`);
             let data = await response.json();
             setProject(data);
         }

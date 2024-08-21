@@ -10,7 +10,7 @@ export default function Experiences() {
     useEffect(() => {
 
         const getExperience = async () => {
-            let response = await fetch(`http://localhost:8888/api/experience/`);
+            let response = await fetch(`http://localhost:10000/api/experience/`);
             let data = await response.json();
             setExperience(data);
         }
